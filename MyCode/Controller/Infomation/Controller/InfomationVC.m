@@ -17,21 +17,40 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    
+    
+    
+    
+    
+    UIButton * btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.backgroundColor = [UIColor blueColor];
+    [btn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+    
+    [btn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.size.mas_equalTo(CGSizeMake(100, 50));
+        make.centerX.mas_equalTo(self.view.mas_centerX);
+        make.centerY.mas_equalTo(self.view.mas_centerY);
+    }];
+    
+    
+}
+
+-(void)btnClick {
+    
+    //往GameScore表添加一条playerName为小明，分数为78的数据
+    BmobObject *gameScore = [BmobObject objectWithClassName:@"UserCount"];
+    [gameScore setObject:@"小明" forKey:@"name"];
+    [gameScore setObject:@101 forKey:@"UserID"];
+    [gameScore saveInBackgroundWithResultBlock:^(BOOL isSuccessful, NSError *error) {
+        //进行操作
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

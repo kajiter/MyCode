@@ -9,7 +9,51 @@
 #ifndef Prefix_pch
 #define Prefix_pch
 
-// Include any system framework and library headers here that should be included in all compilation units.
-// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+//---------TirdParty-------
+#import <AFNetworking.h>
+#import <FMDB.h>
+#import <Masonry.h>
+#import <MJRefresh.h>
+#import <SVProgressHUD.h>
+#import <YYKit.h>
+////*******
+#import <BmobSDK/Bmob.h>
+
+
+//------------------------
+#import "Define.h"
+
+
+
+
+//-------BaseView---------
+#import "BaseTabBarController.h"
+#import "BaseNavigationController.h"
+
+
+
+//----ViewControllers-----
+#import "MasterViewController.h"
+#import "DetailViewController.h"
+
+
+#import "InfomationVC.h"
+
+
+//----------Tools---------
+
+
+//---------Other----------
+#import "AppDelegate.h"
+#import "UIStackManager.h"
+
+
+//------------------------
+//------------------------
+//------------------------
+
+
+
+
 
 #endif /* Prefix_pch */

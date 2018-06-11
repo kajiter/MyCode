@@ -6,8 +6,22 @@
 //  Copyright © 2018年 CL. All rights reserved.
 //
 
+
+#import "ColorMarco.h"
+#import "UrlMarco.h"
+#import "StaticName.h"
+#import "ImageMarco.h"
+#import "SizeMarco.h"
+
 #ifndef Define_h
 #define Define_h
+
+
+
+
+
+
+
 
 
 #endif /* Define_h */
