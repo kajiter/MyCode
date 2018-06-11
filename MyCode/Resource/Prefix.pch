@@ -1,0 +1,15 @@
+//
+//  Prefix.pch
+//  MyCode
+//
+//  Created by CL on 2018/6/11.
+//  Copyright © 2018年 CL. All rights reserved.
+//
+
+#ifndef Prefix_pch
+#define Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* Prefix_pch */
