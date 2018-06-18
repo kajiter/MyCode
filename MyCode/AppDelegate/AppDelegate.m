@@ -27,7 +27,7 @@
     self.window.rootViewController = [InfomationVC new];
     [[UIStackManager shareManager] setupUIStack];
     
-    
+    self.window.rootViewController = [UIStackManager shareManager].tabBarController;
     
     //-------
     [Bmob registerWithAppKey:@"bb42ab6159150f401b2ef65b822276de"];

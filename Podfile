@@ -15,6 +15,6 @@ target 'MyCode' do
    pod 'BmobSDK', '~> 2.3.1'	
    pod 'FMDB', '~> 2.7.2'
    pod 'SVProgressHUD', '~> 2.2.5'
-
+   pod 'mobAPI', '~> 2.0.0'
 
 end

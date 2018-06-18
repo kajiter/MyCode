@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		50B39ACBE4BDEB3A7FDEFB58 /* libPods-MyCode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96A882F9D7C9A6FCF9D9DB67 /* libPods-MyCode.a */; };
+		632C687C20D6C650009A1FBA /* PhoneResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 632C687B20D6C650009A1FBA /* PhoneResultModel.m */; };
+		632C687F20D7587C009A1FBA /* MenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 632C687E20D7587C009A1FBA /* MenuModel.m */; };
+		632C688220D75B4D009A1FBA /* MenuResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 632C688120D75B4D009A1FBA /* MenuResultModel.m */; };
 		6343CD3620CE6B67003C0326 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6343CD2D20CE6B67003C0326 /* main.m */; };
 		6343CD3720CE6B67003C0326 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6343CD3020CE6B67003C0326 /* AppDelegate.m */; };
 		6343CD3D20CE6EA6003C0326 /* UIStackManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6343CD3B20CE6EA5003C0326 /* UIStackManager.m */; };
@@ -65,6 +68,12 @@
 
 /* Begin PBXFileReference section */
 		580427A8FFFC7AE3DA35FE22 /* Pods-MyCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCode.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyCode/Pods-MyCode.release.xcconfig"; sourceTree = "<group>"; };
+		632C687A20D6C650009A1FBA /* PhoneResultModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhoneResultModel.h; sourceTree = "<group>"; };
+		632C687B20D6C650009A1FBA /* PhoneResultModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhoneResultModel.m; sourceTree = "<group>"; };
+		632C687D20D7587C009A1FBA /* MenuModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuModel.h; sourceTree = "<group>"; };
+		632C687E20D7587C009A1FBA /* MenuModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuModel.m; sourceTree = "<group>"; };
+		632C688020D75B4D009A1FBA /* MenuResultModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuResultModel.h; sourceTree = "<group>"; };
+		632C688120D75B4D009A1FBA /* MenuResultModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuResultModel.m; sourceTree = "<group>"; };
 		6343CD2D20CE6B67003C0326 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6343CD2F20CE6B67003C0326 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6343CD3020CE6B67003C0326 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -153,6 +162,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		632C687920D6C634009A1FBA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				632C687A20D6C650009A1FBA /* PhoneResultModel.h */,
+				632C687B20D6C650009A1FBA /* PhoneResultModel.m */,
+				632C687D20D7587C009A1FBA /* MenuModel.h */,
+				632C687E20D7587C009A1FBA /* MenuModel.m */,
+				632C688020D75B4D009A1FBA /* MenuResultModel.h */,
+				632C688120D75B4D009A1FBA /* MenuResultModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		6343CD2420CE6B67003C0326 /* Other */ = {
 			isa = PBXGroup;
 			children = (
@@ -321,6 +343,7 @@
 		63E51F8720CE84200015ED0F /* Infomation */ = {
 			isa = PBXGroup;
 			children = (
+				632C687920D6C634009A1FBA /* Model */,
 				63E51F8820CE84200015ED0F /* Controller */,
 			);
 			path = Infomation;
@@ -390,7 +413,6 @@
 				63BA5D1320898843002686E3 /* Sources */,
 				63BA5D1420898843002686E3 /* Frameworks */,
 				63BA5D1520898843002686E3 /* Resources */,
-				929ED25001E91142C6ED4D5C /* [CP] Embed Pods Frameworks */,
 				41B1CDF208506DB66E099B6F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -557,30 +579,17 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-MyCode/Pods-MyCode-resources.sh",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+				"${PODS_ROOT}/mobAPI/MobProducts/Sample/MobAPIDemo/Sample/Sources/MobAPI.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MobAPI.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyCode/Pods-MyCode-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		929ED25001E91142C6ED4D5C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyCode/Pods-MyCode-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -591,6 +600,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6343CD4C20CE6F0A003C0326 /* BaseNavigationController.m in Sources */,
+				632C687C20D6C650009A1FBA /* PhoneResultModel.m in Sources */,
 				6343CD4020CE6EFA003C0326 /* AppDelegate+category.m in Sources */,
 				6343CD3720CE6B67003C0326 /* AppDelegate.m in Sources */,
 				63E51F9420CE84490015ED0F /* InfomationVC.m in Sources */,
@@ -598,6 +608,8 @@
 				63E51F9120CE84200015ED0F /* MasterViewController.m in Sources */,
 				6343CD4B20CE6F0A003C0326 /* BaseTabBarController.m in Sources */,
 				6343CD3D20CE6EA6003C0326 /* UIStackManager.m in Sources */,
+				632C688220D75B4D009A1FBA /* MenuResultModel.m in Sources */,
+				632C687F20D7587C009A1FBA /* MenuModel.m in Sources */,
 				63E51F9020CE84200015ED0F /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
