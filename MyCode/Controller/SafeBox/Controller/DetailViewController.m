@@ -10,6 +10,8 @@
 
 @interface DetailViewController ()
 
+@property (strong, nonatomic) UILabel *detailDescriptionLabel;
+
 @end
 
 @implementation DetailViewController
@@ -34,8 +36,8 @@
 
 - (void)configureView {
     // Update the user interface for the detail item.
-    if (self.detailStr) {
-        self.detailDescriptionLabel.text = self.detailStr ;
+    if (self.model) {
+        self.detailDescriptionLabel.text = [NSString stringWithFormat:@"%@\n%@",self.model.userName,self.model.passWord ];
     }
 }
 
@@ -46,7 +48,15 @@
 
 - (UILabel *)detailDescriptionLabel {
     if (_detailDescriptionLabel) {
-        _detailDescriptionLabel = [[UILabel alloc]init];
+        _detailDescriptionLabel = [[UILabel alloc] init];
+        _detailDescriptionLabel.backgroundColor = [UIColor whiteColor];
+        _detailDescriptionLabel.textColor = [UIColor blueColor];
+        _detailDescriptionLabel.numberOfLines = 2;
+        _detailDescriptionLabel.font = [UIFont fontWithName:@"HoeflerText-BlackItalic" size:14];
+        _detailDescriptionLabel.layer.borderWidth = 1;
+        _detailDescriptionLabel.layer.borderColor = [UIColor grayColor].CGColor;
+        _detailDescriptionLabel.layer.cornerRadius = 10;
+        _detailDescriptionLabel.layer.masksToBounds = YES;
     }
     
     return _detailDescriptionLabel;

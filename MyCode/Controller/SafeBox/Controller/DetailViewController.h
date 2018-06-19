@@ -7,12 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CodeModel.h"
 
 @interface DetailViewController : UIViewController
 
-@property (strong, nonatomic) NSString *detailStr;
+@property (strong, nonatomic) CodeModel * model;
 
-@property (strong, nonatomic) UILabel *detailDescriptionLabel;
+
 
 @end
 

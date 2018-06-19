@@ -24,10 +24,11 @@
     self.window.backgroundColor = [UIColor whiteColor];
     
     //先随便设置一个根VC
-    self.window.rootViewController = [InfomationVC new];
-    [[UIStackManager shareManager] setupUIStack];
     
+//    self.window.rootViewController = [UIStackManager shareManager].tabBarController;
+    [[UIStackManager shareManager] setupUIStack];
     self.window.rootViewController = [UIStackManager shareManager].tabBarController;
+    
     
     //-------
     [Bmob registerWithAppKey:@"bb42ab6159150f401b2ef65b822276de"];

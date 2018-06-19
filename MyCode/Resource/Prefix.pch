@@ -33,7 +33,7 @@
 
 
 //----ViewControllers-----
-#import "MasterViewController.h"
+#import "SafeBoxVC.h"
 #import "DetailViewController.h"
 
 

@@ -44,6 +44,7 @@
 -(void)setupTabBar {
 
     [self addChildViewController:[[MasterViewController alloc] init] title:@"密码箱" defaultImageName:kImageTabBarDefault1 andSelectedImageName:kImageTabBarSelect1];
+    [self addChildViewController:[[SafeBoxVC alloc] init] title:@"密码箱" defaultImageName:kImageTabBarDefault1 andSelectedImageName:kImageTabBarSelect1];
     [self addChildViewController:[[InfomationVC alloc] init] title:@"资讯" defaultImageName:kImageTabBarDefault2 andSelectedImageName:kImageTabBarSelect2];
 //    [self addChildViewController:[[SuperCutVC alloc] init] title:@"超级满减" defaultImageName:kImageTabBarDefault3 andSelectedImageName:kImageTabBarSelect3];
 //    [self addChildViewController:[[RushListVC alloc] init] title:@"抢购清单" defaultImageName:kImageTabBarDefault4 andSelectedImageName:kImageTabBarSelect4];

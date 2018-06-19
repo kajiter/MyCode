@@ -29,6 +29,10 @@ static UIStackManager * _manager = nil;
     self.tabBarController = [[BaseTabBarController alloc]init];
     [self.tabBarController setupTabBar];
     
+//    UIWindow *keyWindow = [UIApplication sharedApplication].keyWindow ;
+//    
+//    keyWindow.rootViewController = self.tabBarController;
+    
     
 //    IntroductionVC * introVC = [[IntroductionVC alloc] init];
 //    BaseNav * introNav = [[BaseNav alloc] initWithRootViewController:introVC];
