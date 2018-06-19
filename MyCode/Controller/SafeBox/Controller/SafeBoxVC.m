@@ -10,7 +10,8 @@
 
 @interface SafeBoxVC ()<UITableViewDelegate,UITableViewDataSource>
 
-@property (nonatomic, strong) NSMutableArray * dataArray;
+@property (nonatomic, strong) NSMutableArray <NSString*> * stringArray;
+@property (nonatomic, strong) NSMutableArray <CodeModel*> * modelArray;
 
 @end
 
@@ -31,11 +32,11 @@
 
 - (void)initData {
     
-    NSMutableArray * defaultArr =  [NSMutableArray arrayWithArray:[[NSUserDefaults standardUserDefaults] arrayForKey:MyDefault]];
-    if (defaultArr.count > 0) {
+    self.stringArray =  [NSMutableArray arrayWithArray:[[NSUserDefaults standardUserDefaults] arrayForKey:MyDefault]];
+    if (self.stringArray.count > 0) {
         
-        for (NSInteger i = 0; i < defaultArr.count; i ++) {
-            NSObject * item = defaultArr[i];
+        for (NSInteger i = 0; i < self.stringArray.count; i ++) {
+            NSObject * item = self.stringArray[i];
             if ([item isKindOfClass:[NSString class]]) {
                 NSString * strItem = (NSString *)item;
                 NSArray * strArr = [strItem componentsSeparatedByString:@"-"];
@@ -44,12 +45,9 @@
                 model.userName = [strArr firstObject];
                 model.passWord = [strArr lastObject];
                 model.descript = @"迁移";
-                [defaultArr replaceObjectAtIndex:i withObject:model];
+                [self.modelArray addObject:model];
             }
         }
-        
-        
-        [self.dataArray addObjectsFromArray:defaultArr];
     }
     [self.tableView reloadData];
 }
@@ -87,20 +85,28 @@
 
 -(void)insertObjectWith:(NSString *)name andCode:(NSString *)code{
     
-    NSString * secureStr = [NSString stringWithFormat:@"账户名:%@-密码:%@",name,code];
+    ///插入数据到 本地存储
+    NSString * secureStr = [NSString stringWithFormat:@"%@-%@",name,code];
+    [self.stringArray insertObject:secureStr atIndex:0];
     
-    [self.dataArray insertObject:secureStr atIndex:0];
-    
-    [[NSUserDefaults standardUserDefaults] setObject:self.dataArray forKey:MyDefault];
+    [[NSUserDefaults standardUserDefaults] setObject:self.stringArray forKey:MyDefault];
     [[NSUserDefaults standardUserDefaults] synchronize];
     
+    
+    ///插入数据到table 数组
+    CodeModel * model = [CodeModel new];
+    model.userName = name;
+    model.passWord = code;
+    model.descript = @"新加";
+    [self.modelArray insertObject:model atIndex:0];
+
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
     [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
 }
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.dataArray.count;
+    return self.modelArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -108,15 +114,13 @@
     cell = [cell initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cell"];
     
     
-    NSObject * item = self.dataArray[indexPath.row];
+    NSObject * item = self.modelArray[indexPath.row];
     
-    if ([item isKindOfClass:[NSString class]]) {
-        NSString * code = (NSString *)item;
-        cell.textLabel.text = code;
-    }
-    else if ([item isKindOfClass:[CodeModel class]]) {
+    if ([item isKindOfClass:[CodeModel class]]) {
         CodeModel * model = (CodeModel *)item;
-        cell.textLabel.text = model.userName;
+        NSString * password = model.passWord ;
+        password = @"******";
+        cell.textLabel.text = [NSString stringWithFormat:@"账户名:%@-密码:%@",model.userName,password];
 //        cell.detailTextLabel.text = model.passWord;
     }
     
@@ -124,7 +128,7 @@
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    CodeModel * model = self.dataArray[indexPath.row];
+    CodeModel * model = self.modelArray[indexPath.row];
     
     DetailViewController * detail = [[DetailViewController alloc] init];
     detail.model = model;
@@ -140,9 +144,11 @@
 }
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        [self.dataArray removeObjectAtIndex:indexPath.row];
+        [self.modelArray removeObjectAtIndex:indexPath.row];
+        [self.stringArray removeObjectAtIndex:indexPath.row];
         
-        [[NSUserDefaults standardUserDefaults] setObject:self.dataArray forKey:MyDefault];
+        
+        [[NSUserDefaults standardUserDefaults] setObject:self.stringArray forKey:MyDefault];
         [[NSUserDefaults standardUserDefaults] synchronize];
         
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
@@ -168,11 +174,11 @@
     return _tableView;
 }
 
-- (NSMutableArray *)dataArray{
-    if (!_dataArray) {
-        _dataArray = [NSMutableArray array];
+- (NSMutableArray *)modelArray{
+    if (!_modelArray) {
+        _modelArray = [NSMutableArray array];
     }
-    return _dataArray;
+    return _modelArray;
 }
 
 - (void)didReceiveMemoryWarning {
