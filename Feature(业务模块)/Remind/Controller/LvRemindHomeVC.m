@@ -31,7 +31,7 @@
     button1.frame = CGRectMake(100, 100, 100, 25);
     [button1 setImage:[UIImage imageNamed:@"icon_dashboard_next"] forState:UIControlStateNormal];
     [button1 setTitle:@"接下来" forState:UIControlStateNormal];
-    [button1 setTitleColor:[UIColor colorWithRed:150/255.0 green:158/255.0 blue:174/255.0 alpha:1/1.0] forState:UIControlStateNormal];
+    [button1 setTitleColor:[UIColor colorWithHexString:@"0x334455"]];
     button1.titleLabel.font = [UIFont fontWithName:@"PingFangSC-Semibold" size:18.0];
     [button1 reLayoutButtonWithEdgeInsetsStyle:ButtonLayoutStyle_Default imageTitleSpace:5.0];
     button1.backgroundColor = [UIColor redColor];

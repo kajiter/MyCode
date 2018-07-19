@@ -48,6 +48,9 @@
 		6343CD3620CE6B67003C0326 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6343CD2D20CE6B67003C0326 /* main.m */; };
 		63BA5D2720898846002686E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63BA5D2620898846002686E3 /* Assets.xcassets */; };
 		63BA5D2A20898846002686E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63BA5D2820898846002686E3 /* LaunchScreen.storyboard */; };
+		63CFA80E2100A21B00C92FFF /* UIBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CFA80A2100A21A00C92FFF /* UIBadgeView.m */; };
+		63CFA80F2100A21B00C92FFF /* UIButton+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CFA80C2100A21A00C92FFF /* UIButton+Badge.m */; };
+		63CFA8102100A21B00C92FFF /* UIColor+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CFA80D2100A21A00C92FFF /* UIColor+Category.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -133,6 +136,12 @@
 		63BA5D1720898843002686E3 /* MyCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63BA5D2620898846002686E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63BA5D2920898846002686E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		63CFA8072100A21A00C92FFF /* UIColor+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Category.h"; sourceTree = "<group>"; };
+		63CFA8092100A21A00C92FFF /* UIBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBadgeView.h; sourceTree = "<group>"; };
+		63CFA80A2100A21A00C92FFF /* UIBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBadgeView.m; sourceTree = "<group>"; };
+		63CFA80B2100A21A00C92FFF /* UIButton+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Badge.h"; sourceTree = "<group>"; };
+		63CFA80C2100A21A00C92FFF /* UIButton+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Badge.m"; sourceTree = "<group>"; };
+		63CFA80D2100A21A00C92FFF /* UIColor+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Category.m"; sourceTree = "<group>"; };
 		853ABAFD6B736145862D2486 /* Pods-MyCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyCode/Pods-MyCode.debug.xcconfig"; sourceTree = "<group>"; };
 		96A882F9D7C9A6FCF9D9DB67 /* libPods-MyCode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyCode.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -332,6 +341,9 @@
 				1BE03EF2210065C000C125C2 /* UILabel+FastSetting.m */,
 				1BE03F8B2100880A00C125C2 /* UIButton+Relayout.h */,
 				1BE03F8C2100880A00C125C2 /* UIButton+Relayout.m */,
+				63CFA8082100A21A00C92FFF /* UIButton+Badge */,
+				63CFA8072100A21A00C92FFF /* UIColor+Category.h */,
+				63CFA80D2100A21A00C92FFF /* UIColor+Category.m */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -473,6 +485,17 @@
 				63BA5D2820898846002686E3 /* LaunchScreen.storyboard */,
 			);
 			path = MyCode;
+			sourceTree = "<group>";
+		};
+		63CFA8082100A21A00C92FFF /* UIButton+Badge */ = {
+			isa = PBXGroup;
+			children = (
+				63CFA8092100A21A00C92FFF /* UIBadgeView.h */,
+				63CFA80A2100A21A00C92FFF /* UIBadgeView.m */,
+				63CFA80B2100A21A00C92FFF /* UIButton+Badge.h */,
+				63CFA80C2100A21A00C92FFF /* UIButton+Badge.m */,
+			);
+			path = "UIButton+Badge";
 			sourceTree = "<group>";
 		};
 		66C905DCF094B46AABF95793 /* Pods */ = {
@@ -634,6 +657,8 @@
 				1BE03F2D210065C000C125C2 /* LvAddressPickerVC.m in Sources */,
 				6343CD3620CE6B67003C0326 /* main.m in Sources */,
 				1BE03F32210065C000C125C2 /* NSArray+ICXLog.m in Sources */,
+				63CFA80F2100A21B00C92FFF /* UIButton+Badge.m in Sources */,
+				63CFA80E2100A21B00C92FFF /* UIBadgeView.m in Sources */,
 				1BE03F14210065C000C125C2 /* UIStackManager.m in Sources */,
 				1BE03F732100679A00C125C2 /* BaseTabBarController.m in Sources */,
 				1BE03F22210065C000C125C2 /* LvRemindHomeVC.m in Sources */,
@@ -645,6 +670,7 @@
 				1BE03F772100685300C125C2 /* ICXChoosePickerViewVC.m in Sources */,
 				1BE03F34210065C000C125C2 /* ICXAuthorizationStatusTool.m in Sources */,
 				1BE03F30210065C000C125C2 /* ICXSystemInfo.m in Sources */,
+				63CFA8102100A21B00C92FFF /* UIColor+Category.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

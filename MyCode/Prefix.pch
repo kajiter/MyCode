@@ -49,6 +49,11 @@
 
 
 //------------------------
+#import "UIColor+Category.h"
+#import "UIView+Extension.h"
+#import "UIButton+Badge.h"
+#import "UIButton+Relayout.h"
+
 //------------------------
 //------------------------
 
