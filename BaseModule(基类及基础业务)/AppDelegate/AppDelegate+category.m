@@ -23,22 +23,20 @@
         NSString * netVersion = [data objectForKey:@"version"] ;
         
         
-        //获取本地app版本
-        NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
-        NSString * localVersion = [infoDictionary objectForKey:@"CFBundleShortVersionString"];
-        
-        
+//        //获取本地app版本
+//        NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
+//        NSString * localVersion = [infoDictionary objectForKey:@"CFBundleShortVersionString"];
+//        
+//        
 //        BOOL needUpdate = [MyTools compareVersion:netVersion andLocalVersion:localVersion];
-        
-        
-        
+//
 //        if (needUpdate) {
 //
 //            UIAlertView * alert = [[UIAlertView alloc]initWithTitle:@"温馨提示" message:@"有新版本了，快到App Store升级吧" delegate:self cancelButtonTitle:@"暂不升级" otherButtonTitles:@"升级体验" ,nil] ;
 //            alert.tag = 123;
 //            [alert show];
 //
-////            [MyTools showHUD:@"有新版本了，快到App Store升级吧" andTime:1];
+//            [MyTools showHUD:@"有新版本了，快到App Store升级吧" andTime:1];
 //        }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"%@",error);

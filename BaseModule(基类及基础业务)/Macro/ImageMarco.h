@@ -13,20 +13,20 @@
 
 //用于存放图片名称宏
 #pragma mark ---------标签栏图片---------------
-#define kImageTabBarDefault1    @"icon_seckill_nomal"
-#define kImageTabBarDefault2    @"icon_bonusshop_nomal"
-#define kImageTabBarDefault3    @"icon_supercut_nomal"
-#define kImageTabBarDefault4    @"icon_rushlist_nomal"
-#define kImageTabBarDefault5    @"icon_mine_nomal"
+#define kImageTabBarDefault1    @"tabbar_1_normal"
+#define kImageTabBarDefault2    @"tabbar_2_normal"
+#define kImageTabBarDefault3    @"tabbar_3_normal"
+#define kImageTabBarDefault4    @"tabbar_4_normal"
+#define kImageTabBarDefault5    @"tabbar_5_normal"
 
 
 
 //
-#define kImageTabBarSelect1     @"icon_seckill_select"
-#define kImageTabBarSelect2     @"icon_bonusshop_select"
-#define kImageTabBarSelect3     @"icon_supercut_select"
-#define kImageTabBarSelect4     @"icon_rushlist_select"
-#define kImageTabBarSelect5     @"icon_mine_select"
+#define kImageTabBarSelect1     @"tabbar_1_select"
+#define kImageTabBarSelect2     @"tabbar_2_select"
+#define kImageTabBarSelect3     @"tabbar_3_select"
+#define kImageTabBarSelect4     @"tabbar_4_select"
+#define kImageTabBarSelect5     @"tabbar_5_select"
 
 
 #define kOrderEmpty             @"orderError"

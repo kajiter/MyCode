@@ -798,6 +798,7 @@
 			baseConfigurationReference = 853ABAFD6B736145862D2486 /* Pods-MyCode.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P8276WNL67;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -807,9 +808,15 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cl.MyCode;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cl.WeCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = (
+					"-Wno-documentation",
+					"-Wno-strict-prototypes",
+					"-Wno-macro-redefined",
+				);
 			};
 			name = Debug;
 		};
@@ -818,6 +825,7 @@
 			baseConfigurationReference = 580427A8FFFC7AE3DA35FE22 /* Pods-MyCode.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P8276WNL67;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -827,9 +835,15 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cl.MyCode;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cl.WeCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = (
+					"-Wno-documentation",
+					"-Wno-strict-prototypes",
+					"-Wno-macro-redefined",
+				);
 			};
 			name = Release;
 		};
