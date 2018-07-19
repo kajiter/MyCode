@@ -12,21 +12,38 @@
 
 - (void)layoutSubviews{
     [super layoutSubviews];
-    self.titleLabel.numberOfLines = 0;
-    if (self.layoutType == ICXRelayoutButtonTypeBottom) {
-        self.titleLabel.height = self.height - CGRectGetMaxY(self.imageView.frame);
-    }
-    self.titleLabel.textAlignment = NSTextAlignmentCenter;
+//    self.titleLabel.numberOfLines = 0;
+//    if (self.layoutType == ICXRelayoutButtonTypeBottom) {
+//        self.titleLabel.height = self.height - CGRectGetMaxY(self.imageView.frame);
+//    }
+//    self.titleLabel.textAlignment = NSTextAlignmentCenter;
 }
 
-- (void)setlayoutType:(ICXRelayoutButtonType)layoutType
+- (void)setlayoutType:(ButtonLayoutType)layoutType
 {
     _layoutType = layoutType;
     
-    if (layoutType != ICXRelayoutButtonTypeNomal)
-    {
-        self.titleLabel.textAlignment = NSTextAlignmentCenter;
+    switch (layoutType) {
+        case ButtonLayoutType_Default: {
+            self.titleLabel.textAlignment = NSTextAlignmentRight;
+        }
+            
+            break;
+            
+        case ButtonLayoutType_TitleOnTop:
+        case ButtonLayoutType_TitleOnButtom: {
+            self.titleLabel.textAlignment = NSTextAlignmentCenter;
+        }
+            
+            break;
+            
+        default: {
+            self.titleLabel.textAlignment = NSTextAlignmentLeft;
+        }
+            
+            break;
     }
+    
 }
 
 //重写父类方法,改变标题和image的坐标

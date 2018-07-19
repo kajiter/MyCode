@@ -22,7 +22,6 @@
 		1BE03F27210065C000C125C2 /* address_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 1BE03EEF210065C000C125C2 /* address_data.json */; };
 		1BE03F28210065C000C125C2 /* UILabel+FastSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE03EF2210065C000C125C2 /* UILabel+FastSetting.m */; };
 		1BE03F2A210065C000C125C2 /* ICXExpansileButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE03EF9210065C000C125C2 /* ICXExpansileButton.m */; };
-		1BE03F2B210065C000C125C2 /* ICXRelayoutButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE03EFA210065C000C125C2 /* ICXRelayoutButton.m */; };
 		1BE03F2C210065C000C125C2 /* ICXBadgeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE03EFB210065C000C125C2 /* ICXBadgeButton.m */; };
 		1BE03F2D210065C000C125C2 /* LvAddressPickerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE03EFF210065C000C125C2 /* LvAddressPickerVC.m */; };
 		1BE03F2E210065C000C125C2 /* AddressFletModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE03F02210065C000C125C2 /* AddressFletModel.m */; };
@@ -33,10 +32,8 @@
 		1BE03F33210065C000C125C2 /* XZLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE03F0E210065C000C125C2 /* XZLog.m */; };
 		1BE03F34210065C000C125C2 /* ICXAuthorizationStatusTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE03F11210065C000C125C2 /* ICXAuthorizationStatusTool.m */; };
 		1BE03F6B2100679A00C125C2 /* ICXTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE03F572100679900C125C2 /* ICXTabbar.m */; };
-		1BE03F6C2100679A00C125C2 /* BaseScrollVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE03F582100679900C125C2 /* BaseScrollVC.m */; };
 		1BE03F6D2100679A00C125C2 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE03F5C2100679900C125C2 /* BaseNavigationController.m */; };
 		1BE03F6E2100679A00C125C2 /* ICXTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE03F5E2100679900C125C2 /* ICXTabBarButton.m */; };
-		1BE03F6F2100679A00C125C2 /* BaseTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE03F602100679900C125C2 /* BaseTableVC.m */; };
 		1BE03F702100679A00C125C2 /* ICXTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE03F632100679900C125C2 /* ICXTabBarController.m */; };
 		1BE03F712100679A00C125C2 /* ICXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE03F652100679900C125C2 /* ICXViewController.m */; };
 		1BE03F732100679A00C125C2 /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE03F672100679900C125C2 /* BaseTabBarController.m */; };
@@ -44,6 +41,9 @@
 		1BE03F772100685300C125C2 /* ICXChoosePickerViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE03F762100685300C125C2 /* ICXChoosePickerViewVC.m */; };
 		1BE03F7B21006F9600C125C2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BE03F7A21006F9600C125C2 /* Default-568h@2x.png */; };
 		1BE03F7E2100717000C125C2 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE03F7D2100717000C125C2 /* UIView+Extension.m */; };
+		1BE03F81210074AB00C125C2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1BE03F83210074AB00C125C2 /* Localizable.strings */; };
+		1BE03F87210074CF00C125C2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1BE03F89210074CF00C125C2 /* InfoPlist.strings */; };
+		1BE03F8D2100880A00C125C2 /* UIButton+Relayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE03F8C2100880A00C125C2 /* UIButton+Relayout.m */; };
 		50B39ACBE4BDEB3A7FDEFB58 /* libPods-MyCode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96A882F9D7C9A6FCF9D9DB67 /* libPods-MyCode.a */; };
 		6343CD3620CE6B67003C0326 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6343CD2D20CE6B67003C0326 /* main.m */; };
 		63BA5D2720898846002686E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63BA5D2620898846002686E3 /* Assets.xcassets */; };
@@ -86,10 +86,8 @@
 		1BE03EF4210065C000C125C2 /* UILabel+FastSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+FastSetting.h"; sourceTree = "<group>"; };
 		1BE03EF8210065C000C125C2 /* ICXBadgeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICXBadgeButton.h; sourceTree = "<group>"; };
 		1BE03EF9210065C000C125C2 /* ICXExpansileButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICXExpansileButton.m; sourceTree = "<group>"; };
-		1BE03EFA210065C000C125C2 /* ICXRelayoutButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICXRelayoutButton.m; sourceTree = "<group>"; };
 		1BE03EFB210065C000C125C2 /* ICXBadgeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICXBadgeButton.m; sourceTree = "<group>"; };
 		1BE03EFC210065C000C125C2 /* ICXExpansileButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICXExpansileButton.h; sourceTree = "<group>"; };
-		1BE03EFD210065C000C125C2 /* ICXRelayoutButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICXRelayoutButton.h; sourceTree = "<group>"; };
 		1BE03EFF210065C000C125C2 /* LvAddressPickerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LvAddressPickerVC.m; sourceTree = "<group>"; };
 		1BE03F00210065C000C125C2 /* AddressFletModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressFletModel.h; sourceTree = "<group>"; };
 		1BE03F01210065C000C125C2 /* LvAddressPickerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LvAddressPickerVC.h; sourceTree = "<group>"; };
@@ -105,21 +103,17 @@
 		1BE03F10210065C000C125C2 /* ICXAuthorizationStatusTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICXAuthorizationStatusTool.h; sourceTree = "<group>"; };
 		1BE03F11210065C000C125C2 /* ICXAuthorizationStatusTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICXAuthorizationStatusTool.m; sourceTree = "<group>"; };
 		1BE03F572100679900C125C2 /* ICXTabbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICXTabbar.m; sourceTree = "<group>"; };
-		1BE03F582100679900C125C2 /* BaseScrollVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseScrollVC.m; sourceTree = "<group>"; };
 		1BE03F592100679900C125C2 /* ICXTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICXTabBarController.h; sourceTree = "<group>"; };
 		1BE03F5A2100679900C125C2 /* BaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
 		1BE03F5C2100679900C125C2 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
 		1BE03F5D2100679900C125C2 /* ICXViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICXViewController.h; sourceTree = "<group>"; };
 		1BE03F5E2100679900C125C2 /* ICXTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICXTabBarButton.m; sourceTree = "<group>"; };
 		1BE03F5F2100679900C125C2 /* ICXNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICXNavigationController.h; sourceTree = "<group>"; };
-		1BE03F602100679900C125C2 /* BaseTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableVC.m; sourceTree = "<group>"; };
-		1BE03F612100679900C125C2 /* BaseScrollVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseScrollVC.h; sourceTree = "<group>"; };
 		1BE03F622100679900C125C2 /* ICXTabbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICXTabbar.h; sourceTree = "<group>"; };
 		1BE03F632100679900C125C2 /* ICXTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICXTabBarController.m; sourceTree = "<group>"; };
 		1BE03F642100679900C125C2 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
 		1BE03F652100679900C125C2 /* ICXViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICXViewController.m; sourceTree = "<group>"; };
 		1BE03F672100679900C125C2 /* BaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
-		1BE03F682100679900C125C2 /* BaseTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableVC.h; sourceTree = "<group>"; };
 		1BE03F692100679900C125C2 /* ICXNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICXNavigationController.m; sourceTree = "<group>"; };
 		1BE03F6A2100679900C125C2 /* ICXTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICXTabBarButton.h; sourceTree = "<group>"; };
 		1BE03F752100685300C125C2 /* ICXChoosePickerViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICXChoosePickerViewVC.h; sourceTree = "<group>"; };
@@ -127,6 +121,12 @@
 		1BE03F7A21006F9600C125C2 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		1BE03F7C2100717000C125C2 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		1BE03F7D2100717000C125C2 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		1BE03F82210074AB00C125C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1BE03F84210074AE00C125C2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		1BE03F88210074CF00C125C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1BE03F8A210074D000C125C2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		1BE03F8B2100880A00C125C2 /* UIButton+Relayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Relayout.h"; sourceTree = "<group>"; };
+		1BE03F8C2100880A00C125C2 /* UIButton+Relayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Relayout.m"; sourceTree = "<group>"; };
 		580427A8FFFC7AE3DA35FE22 /* Pods-MyCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCode.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyCode/Pods-MyCode.release.xcconfig"; sourceTree = "<group>"; };
 		6343CD2D20CE6B67003C0326 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6343CD3A20CE6BDB003C0326 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
@@ -249,8 +249,8 @@
 		1BE03EDD210065C000C125C2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				1BE03EDE210065C000C125C2 /* LvRemindHomeVC.m */,
 				1BE03EDF210065C000C125C2 /* LvRemindHomeVC.h */,
+				1BE03EDE210065C000C125C2 /* LvRemindHomeVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -299,6 +299,8 @@
 		1BE03EED210065C000C125C2 /* Localize */ = {
 			isa = PBXGroup;
 			children = (
+				1BE03F83210074AB00C125C2 /* Localizable.strings */,
+				1BE03F89210074CF00C125C2 /* InfoPlist.strings */,
 			);
 			path = Localize;
 			sourceTree = "<group>";
@@ -328,6 +330,8 @@
 				1BE03F7D2100717000C125C2 /* UIView+Extension.m */,
 				1BE03EF4210065C000C125C2 /* UILabel+FastSetting.h */,
 				1BE03EF2210065C000C125C2 /* UILabel+FastSetting.m */,
+				1BE03F8B2100880A00C125C2 /* UIButton+Relayout.h */,
+				1BE03F8C2100880A00C125C2 /* UIButton+Relayout.m */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -336,7 +340,7 @@
 			isa = PBXGroup;
 			children = (
 				1BE03EF7210065C000C125C2 /* Button */,
-				1BE03EFE210065C000C125C2 /* Address */,
+				1BE03EFE210065C000C125C2 /* AddressPicker */,
 			);
 			path = CustomGeneralView;
 			sourceTree = "<group>";
@@ -345,24 +349,22 @@
 			isa = PBXGroup;
 			children = (
 				1BE03EF8210065C000C125C2 /* ICXBadgeButton.h */,
-				1BE03EF9210065C000C125C2 /* ICXExpansileButton.m */,
-				1BE03EFA210065C000C125C2 /* ICXRelayoutButton.m */,
 				1BE03EFB210065C000C125C2 /* ICXBadgeButton.m */,
 				1BE03EFC210065C000C125C2 /* ICXExpansileButton.h */,
-				1BE03EFD210065C000C125C2 /* ICXRelayoutButton.h */,
+				1BE03EF9210065C000C125C2 /* ICXExpansileButton.m */,
 			);
 			path = Button;
 			sourceTree = "<group>";
 		};
-		1BE03EFE210065C000C125C2 /* Address */ = {
+		1BE03EFE210065C000C125C2 /* AddressPicker */ = {
 			isa = PBXGroup;
 			children = (
+				1BE03F01210065C000C125C2 /* LvAddressPickerVC.h */,
 				1BE03EFF210065C000C125C2 /* LvAddressPickerVC.m */,
 				1BE03F00210065C000C125C2 /* AddressFletModel.h */,
-				1BE03F01210065C000C125C2 /* LvAddressPickerVC.h */,
 				1BE03F02210065C000C125C2 /* AddressFletModel.m */,
 			);
-			path = Address;
+			path = AddressPicker;
 			sourceTree = "<group>";
 		};
 		1BE03F03210065C000C125C2 /* Tool */ = {
@@ -419,8 +421,6 @@
 			children = (
 				1BE03F622100679900C125C2 /* ICXTabbar.h */,
 				1BE03F572100679900C125C2 /* ICXTabbar.m */,
-				1BE03F612100679900C125C2 /* BaseScrollVC.h */,
-				1BE03F582100679900C125C2 /* BaseScrollVC.m */,
 				1BE03F592100679900C125C2 /* ICXTabBarController.h */,
 				1BE03F632100679900C125C2 /* ICXTabBarController.m */,
 				1BE03F5A2100679900C125C2 /* BaseTabBarController.h */,
@@ -433,8 +433,6 @@
 				1BE03F5E2100679900C125C2 /* ICXTabBarButton.m */,
 				1BE03F5F2100679900C125C2 /* ICXNavigationController.h */,
 				1BE03F692100679900C125C2 /* ICXNavigationController.m */,
-				1BE03F682100679900C125C2 /* BaseTableVC.h */,
-				1BE03F602100679900C125C2 /* BaseTableVC.m */,
 				1BE03F752100685300C125C2 /* ICXChoosePickerViewVC.h */,
 				1BE03F762100685300C125C2 /* ICXChoosePickerViewVC.m */,
 			);
@@ -537,6 +535,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 63BA5D0E20898843002686E3;
 			productRefGroup = 63BA5D1820898843002686E3 /* Products */;
@@ -554,6 +553,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BE03F27210065C000C125C2 /* address_data.json in Resources */,
+				1BE03F87210074CF00C125C2 /* InfoPlist.strings in Resources */,
+				1BE03F81210074AB00C125C2 /* Localizable.strings in Resources */,
 				63BA5D2A20898846002686E3 /* LaunchScreen.storyboard in Resources */,
 				63BA5D2720898846002686E3 /* Assets.xcassets in Resources */,
 				1BE03F7B21006F9600C125C2 /* Default-568h@2x.png in Resources */,
@@ -613,13 +614,11 @@
 			files = (
 				1BE03F2A210065C000C125C2 /* ICXExpansileButton.m in Sources */,
 				1BE03F23210065C000C125C2 /* InfomationVC.m in Sources */,
-				1BE03F6C2100679A00C125C2 /* BaseScrollVC.m in Sources */,
 				1BE03F6B2100679A00C125C2 /* ICXTabbar.m in Sources */,
 				1BE03F20210065C000C125C2 /* DetailViewController.m in Sources */,
 				1BE03F2E210065C000C125C2 /* AddressFletModel.m in Sources */,
 				1BE03F33210065C000C125C2 /* XZLog.m in Sources */,
 				1BE03F28210065C000C125C2 /* UILabel+FastSetting.m in Sources */,
-				1BE03F6F2100679A00C125C2 /* BaseTableVC.m in Sources */,
 				1BE03F6D2100679A00C125C2 /* BaseNavigationController.m in Sources */,
 				1BE03F7E2100717000C125C2 /* UIView+Extension.m in Sources */,
 				1BE03F2F210065C000C125C2 /* ICXLanguageTool.m in Sources */,
@@ -634,13 +633,13 @@
 				1BE03F702100679A00C125C2 /* ICXTabBarController.m in Sources */,
 				1BE03F2D210065C000C125C2 /* LvAddressPickerVC.m in Sources */,
 				6343CD3620CE6B67003C0326 /* main.m in Sources */,
-				1BE03F2B210065C000C125C2 /* ICXRelayoutButton.m in Sources */,
 				1BE03F32210065C000C125C2 /* NSArray+ICXLog.m in Sources */,
 				1BE03F14210065C000C125C2 /* UIStackManager.m in Sources */,
 				1BE03F732100679A00C125C2 /* BaseTabBarController.m in Sources */,
 				1BE03F22210065C000C125C2 /* LvRemindHomeVC.m in Sources */,
 				1BE03F6E2100679A00C125C2 /* ICXTabBarButton.m in Sources */,
 				1BE03F25210065C000C125C2 /* MenuModel.m in Sources */,
+				1BE03F8D2100880A00C125C2 /* UIButton+Relayout.m in Sources */,
 				1BE03F2C210065C000C125C2 /* ICXBadgeButton.m in Sources */,
 				1BE03F31210065C000C125C2 /* NSDictionary+ICXLog.m in Sources */,
 				1BE03F772100685300C125C2 /* ICXChoosePickerViewVC.m in Sources */,
@@ -652,6 +651,24 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		1BE03F83210074AB00C125C2 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BE03F82210074AB00C125C2 /* en */,
+				1BE03F84210074AE00C125C2 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		1BE03F89210074CF00C125C2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BE03F88210074CF00C125C2 /* en */,
+				1BE03F8A210074D000C125C2 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		63BA5D2820898846002686E3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -784,7 +801,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P8276WNL67;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "/Users/tyfanrong/Documents/自己练习的DEMO/协同合作/MyCode/MyCode/Prefix.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MyCode/Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/MyCode/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -804,7 +821,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P8276WNL67;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "/Users/tyfanrong/Documents/自己练习的DEMO/协同合作/MyCode/MyCode/Prefix.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MyCode/Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/MyCode/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
