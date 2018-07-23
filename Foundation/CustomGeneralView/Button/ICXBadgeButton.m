@@ -20,7 +20,7 @@
         self.userInteractionEnabled = NO;
         self.titleLabel.font = [UIFont systemFontOfSize:12.0f];
         //设置背景图，可以为一个红底圈橙色，获取其他自定义的都可以
-#warning - NO 未添加图片
+//未添加图片
 //        [self setBackgroundImage:[self resizedImageWithName:@""] forState:UIControlStateNormal];
     }
     return self;

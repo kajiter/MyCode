@@ -10,8 +10,10 @@
 
 @interface CodeModel : NSObject
 
+@property (nonatomic, copy)NSString * objectId;
+@property (nonatomic, assign)NSInteger classId;
 @property (nonatomic, copy)NSString * userName;
 @property (nonatomic, copy)NSString * passWord;
-@property (nonatomic, copy)NSString * descript;
+
 
 @end

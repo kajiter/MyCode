@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1BE03EAB210065A500C125C2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE03EA9210065A500C125C2 /* AppDelegate.m */; };
-		1BE03EAC210065A500C125C2 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1BE03EAA210065A500C125C2 /* Info.plist */; };
 		1BE03F14210065C000C125C2 /* UIStackManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE03EBF210065C000C125C2 /* UIStackManager.m */; };
 		1BE03F16210065C000C125C2 /* AppDelegate+category.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE03EC3210065C000C125C2 /* AppDelegate+category.m */; };
 		1BE03F1F210065C000C125C2 /* SafeBoxVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE03ED5210065C000C125C2 /* SafeBoxVC.m */; };
@@ -158,7 +157,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1BE03EAD210065C000C125C2 /* BaseModule(基类及基础业务) */ = {
+		1BE03EAD210065C000C125C2 /* BaseModule */ = {
 			isa = PBXGroup;
 			children = (
 				1BE03EC1210065C000C125C2 /* AppDelegate */,
@@ -166,7 +165,7 @@
 				1BE03EBD210065C000C125C2 /* UIStack */,
 				1BE03EAE210065C000C125C2 /* ICXBaseClass */,
 			);
-			path = "BaseModule(基类及基础业务)";
+			path = BaseModule;
 			sourceTree = "<group>";
 		};
 		1BE03EAE210065C000C125C2 /* ICXBaseClass */ = {
@@ -208,14 +207,14 @@
 			path = AppDelegate;
 			sourceTree = "<group>";
 		};
-		1BE03ED2210065C000C125C2 /* Feature(业务模块) */ = {
+		1BE03ED2210065C000C125C2 /* Founction */ = {
 			isa = PBXGroup;
 			children = (
 				1BE03ED3210065C000C125C2 /* SafeBox */,
-				1BE03EDC210065C000C125C2 /* Remind */,
 				1BE03EE0210065C000C125C2 /* Infomation */,
+				1BE03EDC210065C000C125C2 /* Remind */,
 			);
-			path = "Feature(业务模块)";
+			path = Founction;
 			sourceTree = "<group>";
 		};
 		1BE03ED3210065C000C125C2 /* SafeBox */ = {
@@ -230,10 +229,10 @@
 		1BE03ED4210065C000C125C2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				1BE03ED5210065C000C125C2 /* SafeBoxVC.m */,
-				1BE03ED6210065C000C125C2 /* DetailViewController.m */,
 				1BE03ED7210065C000C125C2 /* SafeBoxVC.h */,
+				1BE03ED5210065C000C125C2 /* SafeBoxVC.m */,
 				1BE03ED8210065C000C125C2 /* DetailViewController.h */,
+				1BE03ED6210065C000C125C2 /* DetailViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -276,8 +275,8 @@
 		1BE03EE1210065C000C125C2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				1BE03EE2210065C000C125C2 /* InfomationVC.m */,
 				1BE03EE3210065C000C125C2 /* InfomationVC.h */,
+				1BE03EE2210065C000C125C2 /* InfomationVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -285,24 +284,24 @@
 		1BE03EE4210065C000C125C2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1BE03EE8210065C000C125C2 /* MenuResultModel.h */,
 				1BE03EE5210065C000C125C2 /* MenuResultModel.m */,
+				1BE03EE9210065C000C125C2 /* MenuModel.h */,
 				1BE03EE6210065C000C125C2 /* MenuModel.m */,
 				1BE03EE7210065C000C125C2 /* PhoneResultModel.h */,
-				1BE03EE8210065C000C125C2 /* MenuResultModel.h */,
-				1BE03EE9210065C000C125C2 /* MenuModel.h */,
 				1BE03EEA210065C000C125C2 /* PhoneResultModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		1BE03EEB210065C000C125C2 /* Source(资源) */ = {
+		1BE03EEB210065C000C125C2 /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				1BE03F7A21006F9600C125C2 /* Default-568h@2x.png */,
 				1BE03EED210065C000C125C2 /* Localize */,
 				1BE03EEE210065C000C125C2 /* JSON */,
 			);
-			path = "Source(资源)";
+			path = Source;
 			sourceTree = "<group>";
 		};
 		1BE03EED210065C000C125C2 /* Localize */ = {
@@ -322,14 +321,14 @@
 			path = JSON;
 			sourceTree = "<group>";
 		};
-		1BE03EF0210065C000C125C2 /* Foundation(工具及通用视图) */ = {
+		1BE03EF0210065C000C125C2 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
 				1BE03EF1210065C000C125C2 /* Extension */,
 				1BE03EF6210065C000C125C2 /* CustomGeneralView */,
 				1BE03F03210065C000C125C2 /* Tool */,
 			);
-			path = "Foundation(工具及通用视图)";
+			path = Foundation;
 			sourceTree = "<group>";
 		};
 		1BE03EF1210065C000C125C2 /* Extension */ = {
@@ -454,10 +453,10 @@
 		63BA5D0E20898843002686E3 = {
 			isa = PBXGroup;
 			children = (
-				1BE03EF0210065C000C125C2 /* Foundation(工具及通用视图) */,
-				1BE03EAD210065C000C125C2 /* BaseModule(基类及基础业务) */,
-				1BE03EEB210065C000C125C2 /* Source(资源) */,
-				1BE03ED2210065C000C125C2 /* Feature(业务模块) */,
+				1BE03EF0210065C000C125C2 /* Foundation */,
+				1BE03EAD210065C000C125C2 /* BaseModule */,
+				1BE03EEB210065C000C125C2 /* Source */,
+				1BE03ED2210065C000C125C2 /* Founction */,
 				63BA5D1920898843002686E3 /* MyCode */,
 				63BA5D1820898843002686E3 /* Products */,
 				66C905DCF094B46AABF95793 /* Pods */,
@@ -581,7 +580,6 @@
 				63BA5D2A20898846002686E3 /* LaunchScreen.storyboard in Resources */,
 				63BA5D2720898846002686E3 /* Assets.xcassets in Resources */,
 				1BE03F7B21006F9600C125C2 /* Default-568h@2x.png in Resources */,
-				1BE03EAC210065A500C125C2 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

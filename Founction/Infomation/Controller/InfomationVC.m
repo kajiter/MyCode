@@ -105,15 +105,6 @@
     }];
     
     
-//    [MobAPI sendRequest:[MOBADreamRequest dreamRequestWithKeyword:@"骑车" page:@"1" size:@"5"] onResult:^(MOBAResponse *response) {
-//        if (response.error){
-//            NSLog(@"request error = %@", response.error);
-//        }else{
-//            NSLog(@"request success = %@", response.responder);
-//
-//        }
-//    }];
-    
 }
 
 
