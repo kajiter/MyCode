@@ -61,6 +61,8 @@
 //    button2.backgroundColor = [UIColor redColor];
 //    [self.view addSubview:button2];
 
+    //ceshi
+    
     [self makeConstraint];
 
     
