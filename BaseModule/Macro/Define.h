@@ -18,7 +18,10 @@
 
 
 
-
+#define kAPP_DOCUMENT_PATH  [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"]
+#define kAPP_TEMP_PATH      [NSHomeDirectory() stringByAppendingPathComponent:@"temp"]
+#define kAPP_LIBRARY_PATH   [NSHomeDirectory() stringByAppendingPathComponent:@"Library"]
+#define kAPP_LIBRARY_CACHES_PATH [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject]
 
 
 
