@@ -8,16 +8,16 @@
 
 #import "InfomationVC.h"
 
-#import <MobAPI/MobAPI.h>
+#import "MenuResultModel.h"
 
 #import "PhoneResultModel.h"
-
+#import "MenuDetailVC.h"
 
 @interface InfomationVC ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong)UITableView * tableView;
 @property (nonatomic, strong)NSMutableArray * dataArray;
-
+@property (nonatomic, strong)NSArray <bigChildsModel*>* bigChildArray ;
 
 @property (nonatomic, strong)UITextField * telephone;
 @property (nonatomic, strong)UILabel * teleInfoLabel;
@@ -41,6 +41,7 @@
 }
 
 -(void)initView {
+    
     UIView * header = [UIView new];
     header.backgroundColor = [UIColor redColor];
     header.frame = CGRectMake(0, 0, kScreenWidth, 50);
@@ -59,7 +60,7 @@
     self.telephone = tele;
     
     UILabel * info = [[UILabel alloc]init];
-    info.textColor = [UIColor greenColor];
+    info.textColor = [UIColor blackColor];
     [header addSubview:info];
     [info mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.bottom.mas_equalTo(header);
@@ -86,6 +87,8 @@
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(self.view);
     }];
+    
+    self.tableView.contentInset = UIEdgeInsetsMake(0, 0, kAPPTabbarHeight, 0);
 }
 
 - (void)initData{
@@ -98,9 +101,13 @@
         }else{
             NSLog(@"request success = %@", response.responder);
             
+            MenuResultModel * responder = [MenuResultModel modelWithJSON:response.responder];
             
-//            self.dataArray
-            
+            resultModel * result = responder.result;
+            NSArray <bigChildsModel*>* bigChildArray = result.bigChilds;
+        
+            self.bigChildArray = bigChildArray;
+            [self.tableView reloadData];
         }
     }];
     
@@ -122,13 +129,6 @@
     [[NSUserDefaults standardUserDefaults] setInteger:userCount forKey:@"UserID"];
     [[NSUserDefaults standardUserDefaults] synchronize];
     
-    //往GameScore表添加一条playerName为小明，分数为78的数据
-//    BmobObject *gameScore = [BmobObject objectWithClassName:@"UserCount"];
-//    [gameScore setObject:@"小明" forKey:@"name"];
-//    [gameScore setObject:[NSNumber numberWithInteger:userCount] forKey:@"UserID"];
-//    [gameScore saveInBackgroundWithResultBlock:^(BOOL isSuccessful, NSError *error) {
-//        //进行操作
-//    }];
     
     if (self.telephone.text.length != 11) {
         return;
@@ -153,11 +153,34 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     
-    return self.dataArray.count;
+    return self.bigChildArray.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 10;
+    bigChildsModel * bigChild = [self.bigChildArray objectAtIndex:section];
+    //categoryInfo * category = bigChild.categoryInfo;
+    NSArray <childsModel *> * childArray = bigChild.childs;
+    return childArray.count;
+    
+}
+
+
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 60;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    bigChildsModel * bigChild = [self.bigChildArray objectAtIndex:section];
+    categoryInfo * category = bigChild.categoryInfo;
+
+    UILabel * sectionLabel = [UILabel new];
+    sectionLabel.frame = CGRectMake(0, 0, kScreenWidth, 60);
+    sectionLabel.textAlignment = NSTextAlignmentCenter;
+    sectionLabel.backgroundColor = UIColorHex(0x559999);
+    sectionLabel.textColor = [UIColor whiteColor];
+    sectionLabel.text = category.name;
+    
+    return sectionLabel;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -165,11 +188,31 @@
     [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
     UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     
+    bigChildsModel * bigChild = [self.bigChildArray objectAtIndex:indexPath.section];
+
+    NSArray <childsModel *> * childArray = bigChild.childs;
+    childsModel * child = [childArray objectAtIndex:indexPath.row];
+    
+    
+    cell.textLabel.text = child.categoryInfo.name;
+    
+    
+    
     return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
+    bigChildsModel * bigChild = [self.bigChildArray objectAtIndex:indexPath.section];
+    
+    NSArray <childsModel *> * childArray = bigChild.childs;
+    childsModel * child = [childArray objectAtIndex:indexPath.row];
+    
+    MenuDetailVC * menuVC = [MenuDetailVC new];
+    menuVC.category = child.categoryInfo;
+    [self.navigationController pushViewController:menuVC animated:YES];
+  
 }
 
 

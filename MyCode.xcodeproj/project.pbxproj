@@ -45,6 +45,7 @@
 		1BE03F8D2100880A00C125C2 /* UIButton+Relayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE03F8C2100880A00C125C2 /* UIButton+Relayout.m */; };
 		50B39ACBE4BDEB3A7FDEFB58 /* libPods-MyCode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96A882F9D7C9A6FCF9D9DB67 /* libPods-MyCode.a */; };
 		6343CD3620CE6B67003C0326 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6343CD2D20CE6B67003C0326 /* main.m */; };
+		6381383A2106C18B0095926E /* MenuDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 638138392106C18B0095926E /* MenuDetailVC.m */; };
 		63BA5D2720898846002686E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63BA5D2620898846002686E3 /* Assets.xcassets */; };
 		63BA5D2A20898846002686E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63BA5D2820898846002686E3 /* LaunchScreen.storyboard */; };
 		63CFA80E2100A21B00C92FFF /* UIBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CFA80A2100A21A00C92FFF /* UIBadgeView.m */; };
@@ -132,6 +133,8 @@
 		580427A8FFFC7AE3DA35FE22 /* Pods-MyCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCode.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyCode/Pods-MyCode.release.xcconfig"; sourceTree = "<group>"; };
 		6343CD2D20CE6B67003C0326 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6343CD3A20CE6BDB003C0326 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		638138382106C18B0095926E /* MenuDetailVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuDetailVC.h; sourceTree = "<group>"; };
+		638138392106C18B0095926E /* MenuDetailVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuDetailVC.m; sourceTree = "<group>"; };
 		63BA5D1720898843002686E3 /* MyCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63BA5D2620898846002686E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63BA5D2920898846002686E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -277,6 +280,8 @@
 			children = (
 				1BE03EE3210065C000C125C2 /* InfomationVC.h */,
 				1BE03EE2210065C000C125C2 /* InfomationVC.m */,
+				638138382106C18B0095926E /* MenuDetailVC.h */,
+				638138392106C18B0095926E /* MenuDetailVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -526,6 +531,7 @@
 				63BA5D1420898843002686E3 /* Frameworks */,
 				63BA5D1520898843002686E3 /* Resources */,
 				41B1CDF208506DB66E099B6F /* [CP] Copy Pods Resources */,
+				D780FD07D33E9C3A9E86E026 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -626,6 +632,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyCode/Pods-MyCode-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D780FD07D33E9C3A9E86E026 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyCode/Pods-MyCode-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -645,6 +666,7 @@
 				1BE03F2F210065C000C125C2 /* ICXLanguageTool.m in Sources */,
 				1BE03F16210065C000C125C2 /* AppDelegate+category.m in Sources */,
 				1BE03F21210065C000C125C2 /* CodeModel.m in Sources */,
+				6381383A2106C18B0095926E /* MenuDetailVC.m in Sources */,
 				1BE03EAB210065A500C125C2 /* AppDelegate.m in Sources */,
 				1BE03F24210065C000C125C2 /* MenuResultModel.m in Sources */,
 				1BE03F1F210065C000C125C2 /* SafeBoxVC.m in Sources */,

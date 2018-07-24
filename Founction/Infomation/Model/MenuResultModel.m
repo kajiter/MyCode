@@ -12,3 +12,47 @@
 
 
 @end
+
+
+@implementation resultModel
+
++ (NSDictionary *)modelContainerPropertyGenericClass
+{
+    return @{
+             @"bigChilds" : [bigChildsModel class] ,
+             };
+}
+
++ (NSDictionary *)modelCustomPropertyMapper {
+    return @{
+             @"bigChilds"    : @"childs",
+             };
+}
+
+
+@end
+
+
+
+@implementation bigChildsModel
+
++ (NSDictionary *)modelContainerPropertyGenericClass
+{
+    return @{
+             @"childs" : [childsModel class] ,
+             };
+}
+@end
+
+
+
+@implementation childsModel
+
+
+@end
+
+
+@implementation categoryInfo
+
+
+@end

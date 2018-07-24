@@ -19,8 +19,6 @@
 #define kImageTabBarDefault4    @"tabbar_4_normal"
 #define kImageTabBarDefault5    @"tabbar_5_normal"
 
-
-
 //
 #define kImageTabBarSelect1     @"tabbar_1_select"
 #define kImageTabBarSelect2     @"tabbar_2_select"
@@ -28,6 +26,8 @@
 #define kImageTabBarSelect4     @"tabbar_4_select"
 #define kImageTabBarSelect5     @"tabbar_5_select"
 
+
+#define kDefaultImage      [UIImage imageNamed:@"app_default_image"]
 
 #define kOrderEmpty             @"orderError"
 #define kShopCarEmpty           @"shopCarEmpty"

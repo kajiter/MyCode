@@ -30,6 +30,7 @@ static  NSString * const className = @"Code";
     // Do any additional setup after loading the view.
     
     [self.view addSubview:self.tableView];
+    self.tableView.contentInset = UIEdgeInsetsMake(0, 0, kAPPTabbarHeight, 0);
     
     UIBarButtonItem * rightBtn = [[UIBarButtonItem alloc]initWithTitle:@"添加" style:UIBarButtonItemStylePlain target:self action:@selector(topRightBtnCilck)];
     [self.navigationItem setRightBarButtonItem:rightBtn];

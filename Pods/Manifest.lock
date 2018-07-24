@@ -38,18 +38,6 @@ DEPENDENCIES:
   - SVProgressHUD (~> 2.2.5)
   - YYKit (~> 1.0.9)
 
-SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - AFNetworking
-    - BmobSDK
-    - FMDB
-    - Masonry
-    - MJRefresh
-    - mobAPI
-    - MOBFoundation
-    - SVProgressHUD
-    - YYKit
-
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   BmobSDK: e0f9e4b451233a80af63a8ae4f2d239474bf567b
@@ -63,4 +51,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 71a8c27adcc75ae2d6ce2678d36f20021046ca5c
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.4.0
