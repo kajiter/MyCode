@@ -48,7 +48,7 @@
     [self addChildViewController:[[InfomationVC alloc] init] title:@"资讯" defaultImageName:kImageTabBarDefault2 andSelectedImageName:kImageTabBarSelect2];
     UIViewController *remindVC = [[NSClassFromString(@"LvRemindHomeVC") alloc]init];
     [self addChildViewController:remindVC title:@"懒人提醒" defaultImageName:kImageTabBarDefault3 andSelectedImageName:kImageTabBarSelect3];
-//    [self addChildViewController:[[RushListVC alloc] init] title:@"抢购清单" defaultImageName:kImageTabBarDefault4 andSelectedImageName:kImageTabBarSelect4];
+    [self addChildViewController:[[QiuVC alloc] init] title:@"糗事百科" defaultImageName:kImageTabBarDefault4 andSelectedImageName:kImageTabBarSelect4];
 //    [self addChildViewController:[[MineVC alloc] init] title:@"我的好实再" defaultImageName:kImageTabBarDefault5 andSelectedImageName:kImageTabBarSelect5];
     
     
