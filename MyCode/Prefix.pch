@@ -39,6 +39,8 @@
 
 #import "InfomationVC.h"
 
+#import "QiuVC.h"
+
 
 //----------Tools---------
 

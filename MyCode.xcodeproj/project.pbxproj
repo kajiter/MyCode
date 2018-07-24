@@ -46,6 +46,7 @@
 		50B39ACBE4BDEB3A7FDEFB58 /* libPods-MyCode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96A882F9D7C9A6FCF9D9DB67 /* libPods-MyCode.a */; };
 		6343CD3620CE6B67003C0326 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6343CD2D20CE6B67003C0326 /* main.m */; };
 		6381383A2106C18B0095926E /* MenuDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 638138392106C18B0095926E /* MenuDetailVC.m */; };
+		6381384021072E3D0095926E /* QiuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6381383F21072E3D0095926E /* QiuVC.m */; };
 		63BA5D2720898846002686E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63BA5D2620898846002686E3 /* Assets.xcassets */; };
 		63BA5D2A20898846002686E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63BA5D2820898846002686E3 /* LaunchScreen.storyboard */; };
 		63CFA80E2100A21B00C92FFF /* UIBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CFA80A2100A21A00C92FFF /* UIBadgeView.m */; };
@@ -135,6 +136,8 @@
 		6343CD3A20CE6BDB003C0326 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		638138382106C18B0095926E /* MenuDetailVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuDetailVC.h; sourceTree = "<group>"; };
 		638138392106C18B0095926E /* MenuDetailVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuDetailVC.m; sourceTree = "<group>"; };
+		6381383E21072E3D0095926E /* QiuVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QiuVC.h; sourceTree = "<group>"; };
+		6381383F21072E3D0095926E /* QiuVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QiuVC.m; sourceTree = "<group>"; };
 		63BA5D1720898843002686E3 /* MyCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63BA5D2620898846002686E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63BA5D2920898846002686E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -216,6 +219,7 @@
 				1BE03ED3210065C000C125C2 /* SafeBox */,
 				1BE03EE0210065C000C125C2 /* Infomation */,
 				1BE03EDC210065C000C125C2 /* Remind */,
+				6381383B21072E170095926E /* Qiu */,
 			);
 			path = Founction;
 			sourceTree = "<group>";
@@ -455,6 +459,31 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		6381383B21072E170095926E /* Qiu */ = {
+			isa = PBXGroup;
+			children = (
+				6381383C21072E170095926E /* Controller */,
+				6381383D21072E170095926E /* Model */,
+			);
+			path = Qiu;
+			sourceTree = "<group>";
+		};
+		6381383C21072E170095926E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6381383E21072E3D0095926E /* QiuVC.h */,
+				6381383F21072E3D0095926E /* QiuVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6381383D21072E170095926E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		63BA5D0E20898843002686E3 = {
 			isa = PBXGroup;
 			children = (
@@ -663,6 +692,7 @@
 				1BE03F21210065C000C125C2 /* CodeModel.m in Sources */,
 				6381383A2106C18B0095926E /* MenuDetailVC.m in Sources */,
 				1BE03EAB210065A500C125C2 /* AppDelegate.m in Sources */,
+				6381384021072E3D0095926E /* QiuVC.m in Sources */,
 				1BE03F24210065C000C125C2 /* MenuResultModel.m in Sources */,
 				1BE03F1F210065C000C125C2 /* SafeBoxVC.m in Sources */,
 				1BE03F712100679A00C125C2 /* ICXViewController.m in Sources */,
