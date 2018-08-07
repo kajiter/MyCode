@@ -28,6 +28,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self initSubViews];
+    
+    
+    //测试测试
 }
 
 
