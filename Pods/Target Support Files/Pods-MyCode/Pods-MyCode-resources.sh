@@ -1,6 +1,7 @@
 #!/bin/sh
 set -e
 <<<<<<< HEAD
+<<<<<<< HEAD
 set -u
 set -o pipefail
 
@@ -16,6 +17,8 @@ if [ -z ${UNLOCALIZED_RESOURCES_FOLDER_PATH+x} ]; then
 fi
 =======
 >>>>>>> CL- add MenuVC net  data
+=======
+>>>>>>> 770aaca2a6d5c31f3777f635abd1fa661211f9a7
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
 
