@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '11.0'
 inhibit_all_warnings!
 
 target 'MyCode' do
@@ -8,13 +8,13 @@ target 'MyCode' do
 
   # Pods for HuaCai
   
-   pod 'AFNetworking', '~> 3.2.1'
-   pod 'YYKit', '~> 1.0.9'
-   pod 'Masonry', '~> 1.1.0'
-   pod 'MJRefresh', '~> 3.1.15.3'
-   pod 'BmobSDK', '~> 2.3.1'	
-   pod 'FMDB', '~> 2.7.2'
-   pod 'SVProgressHUD', '~> 2.2.5'
-   pod 'mobAPI', '~> 2.0.0'
+   pod 'AFNetworking'
+   pod 'YYKit'
+   pod 'Masonry'
+   pod 'MJRefresh'
+   pod 'BmobSDK'
+   pod 'FMDB'
+   pod 'SVProgressHUD'
+   pod 'mobAPI'
 
 end
