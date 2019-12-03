@@ -15,7 +15,6 @@
 			dependencies = (
 			);
 			name = MOBFoundation;
-			productName = MOBFoundation;
 		};
 		54CF2B3ACD696773084281BE54CE8526 /* mobAPI */ = {
 			isa = PBXAggregateTarget;
@@ -26,7 +25,6 @@
 				2C1CB0C75EEF54921FB7DAB9183A4D48 /* PBXTargetDependency */,
 			);
 			name = mobAPI;
-			productName = mobAPI;
 		};
 		BE3C918A33694CFBEA10C8DD8F3C3515 /* BmobSDK */ = {
 			isa = PBXAggregateTarget;
@@ -36,7 +34,6 @@
 			dependencies = (
 			);
 			name = BmobSDK;
-			productName = BmobSDK;
 		};
 /* End PBXAggregateTarget section */
 
@@ -443,7 +440,7 @@
 		1E2724E963C1D9921C84B4059C677E75 /* YYSentinel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYSentinel.h; path = YYKit/Utility/YYSentinel.h; sourceTree = "<group>"; };
 		1EC918050A5368C0EBB937A15E7A62E4 /* NSObject+YYModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+YYModel.m"; path = "YYKit/Model/NSObject+YYModel.m"; sourceTree = "<group>"; };
 		1F9BA012AE62D5A64BB4EE5E85190211 /* UIImage+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+YYAdd.h"; path = "YYKit/Base/UIKit/UIImage+YYAdd.h"; sourceTree = "<group>"; };
-		1FFED36A657123030ABB700256D73F15 /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FFED36A657123030ABB700256D73F15 /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMasonry.a; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		20211779FF99D96FE1069773DF8F69F8 /* YYTextSelectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextSelectionView.h; path = YYKit/Text/Component/YYTextSelectionView.h; sourceTree = "<group>"; };
 		20B9135843EEEE2CD8545D43043EBD2C /* YYThreadSafeDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYThreadSafeDictionary.h; path = YYKit/Utility/YYThreadSafeDictionary.h; sourceTree = "<group>"; };
 		2123F69271B1364341B9773BFAB6B9CE /* FMDatabaseQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = src/fmdb/FMDatabaseQueue.m; sourceTree = "<group>"; };
@@ -602,7 +599,7 @@
 		9694DE5C39F8A40D34EC1F78B6055B67 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
 		9C789FB4BD210D885B523A7C3AE6A589 /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackFooter.h; path = MJRefresh/Base/MJRefreshBackFooter.h; sourceTree = "<group>"; };
 		9D644E3477411E15307DE82292517FED /* Pods-MyCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyCode.release.xcconfig"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F37098EAECFB27D8BD4BAEA82186FA6 /* UIDevice+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIDevice+YYAdd.m"; path = "YYKit/Base/UIKit/UIDevice+YYAdd.m"; sourceTree = "<group>"; };
 		9F9500EC3AC49E6E8840955EADC2D984 /* YYKeychain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYKeychain.m; path = YYKit/Utility/YYKeychain.m; sourceTree = "<group>"; };
 		A07BE1E7204B7311D254821BC2AA90A0 /* YYDispatchQueuePool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYDispatchQueuePool.h; path = YYKit/Utility/YYDispatchQueuePool.h; sourceTree = "<group>"; };
@@ -613,13 +610,13 @@
 		A14FC349E44559DE6F7D0FA337D1B740 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = src/fmdb/FMDatabaseQueue.h; sourceTree = "<group>"; };
 		A1FA22CBBDD3064C6E4CAB8B88DF6465 /* NSDictionary+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+YYAdd.h"; path = "YYKit/Base/Foundation/NSDictionary+YYAdd.h"; sourceTree = "<group>"; };
 		A22A3AA2B0DE8B73D53059E2CEC871B9 /* UIBarButtonItem+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIBarButtonItem+YYAdd.m"; path = "YYKit/Base/UIKit/UIBarButtonItem+YYAdd.m"; sourceTree = "<group>"; };
-		A29ABE223D125CE65626A8821023F998 /* libPods-MyCode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyCode.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A29ABE223D125CE65626A8821023F998 /* libPods-MyCode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-MyCode.a"; path = "libPods-MyCode.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3145ECC03D57E7AE37BB881588627D6 /* UIImage+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+YYAdd.m"; path = "YYKit/Base/UIKit/UIImage+YYAdd.m"; sourceTree = "<group>"; };
 		A34E87D3BD490E7EAC84C0CA86C8ECF3 /* YYKVStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYKVStorage.h; path = YYKit/Cache/YYKVStorage.h; sourceTree = "<group>"; };
-		A3A80BA70CFB7F75C5391BEBBBA8C9DA /* libFMDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFMDB.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3A80BA70CFB7F75C5391BEBBBA8C9DA /* libFMDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libFMDB.a; path = libFMDB.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3DAC7A470E07F25EB16047C3D0824C6 /* FMResultSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = src/fmdb/FMResultSet.m; sourceTree = "<group>"; };
 		A43A431F180C24F65AC182159A7B67C8 /* mobAPI.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = mobAPI.xcconfig; sourceTree = "<group>"; };
-		A4FA15D44DF6BAC7550EDEED10862AA3 /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4FA15D44DF6BAC7550EDEED10862AA3 /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAFNetworking.a; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A53B940852C6D0E73501C838A68DA3F9 /* MJRefreshBackGifFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackGifFooter.h; path = MJRefresh/Custom/Footer/Back/MJRefreshBackGifFooter.h; sourceTree = "<group>"; };
 		A5AE0185CF5979BE1EC35702EBFED117 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
 		A6A5F335BE8285DE3887BD9ECC863560 /* YYWebImageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYWebImageManager.h; path = YYKit/Image/YYWebImageManager.h; sourceTree = "<group>"; };
@@ -694,17 +691,17 @@
 		DFF14B87161F029169148F4F983A04D4 /* MOBFoundationEx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MOBFoundationEx.framework; path = MOBFoundation/MOBFoundationEx.framework; sourceTree = "<group>"; };
 		E1E02F04ECD732D759604DFDD0D6F7AA /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
 		E26EF710C7E2F0A4AB119E014157C729 /* YYTextContainerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextContainerView.h; path = YYKit/Text/Component/YYTextContainerView.h; sourceTree = "<group>"; };
-		E325DCCD357AF9DF2F7C506424659D7E /* libYYKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libYYKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E325DCCD357AF9DF2F7C506424659D7E /* libYYKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libYYKit.a; path = libYYKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3840712C7A1224007222C79428A32BF /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
 		E42A2FBF0E7138D427305C63EC9526AF /* UIApplication+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+YYAdd.m"; path = "YYKit/Base/UIKit/UIApplication+YYAdd.m"; sourceTree = "<group>"; };
-		E49D6D248DD1CEE584E6776B9164A1B2 /* libMJRefresh.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMJRefresh.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E49D6D248DD1CEE584E6776B9164A1B2 /* libMJRefresh.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMJRefresh.a; path = libMJRefresh.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5A11F9B4529F5F0A88DC93A21CDD9DA /* UIDevice+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIDevice+YYAdd.h"; path = "YYKit/Base/UIKit/UIDevice+YYAdd.h"; sourceTree = "<group>"; };
 		E5DBDD2C278CEC214838E14CB82E4773 /* NSParagraphStyle+YYText.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSParagraphStyle+YYText.m"; path = "YYKit/Text/String/NSParagraphStyle+YYText.m"; sourceTree = "<group>"; };
 		E825E5E1142C2584DDD38E97F19AE8DA /* UIGestureRecognizer+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIGestureRecognizer+YYAdd.h"; path = "YYKit/Base/UIKit/UIGestureRecognizer+YYAdd.h"; sourceTree = "<group>"; };
 		E89EBDBC25CA233DD53BF9D0B212578B /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
 		E8D047BA878AC7498C57C403427CE59B /* YYTextArchiver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextArchiver.h; path = YYKit/Text/String/YYTextArchiver.h; sourceTree = "<group>"; };
 		E965315E8D85A05E144F65EBAE20C828 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
-		E97D43C46A45EE515A4DA3AF94398441 /* libSVProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSVProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E97D43C46A45EE515A4DA3AF94398441 /* libSVProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSVProgressHUD.a; path = libSVProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB7226C949B6E1F48F3FC2C2EF41E840 /* Pods-MyCode-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MyCode-acknowledgements.markdown"; sourceTree = "<group>"; };
 		EBD320BB3FA80EE704DF99DFA9683F9F /* UIScrollView+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+YYAdd.m"; path = "YYKit/Base/UIKit/UIScrollView+YYAdd.m"; sourceTree = "<group>"; };
 		ED7BF344F3AAD8085FE8BC313CA869B4 /* YYLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYLabel.m; path = YYKit/Text/YYLabel.m; sourceTree = "<group>"; };
@@ -808,6 +805,7 @@
 				3821ED29C66DC7653D2B282B619DD7B1 /* Support Files */,
 				E06837B7DC7790EC27633E91A1667CC0 /* UIKit */,
 			);
+			name = AFNetworking;
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
@@ -1020,6 +1018,7 @@
 				EE3B84BC2A6A10A443AF09B9B1588EB4 /* no-arc */,
 				2A71212E514FC5F5B163060736A896F6 /* Support Files */,
 			);
+			name = YYKit;
 			path = YYKit;
 			sourceTree = "<group>";
 		};
@@ -1074,6 +1073,7 @@
 				5C83E6608957A91E2DEA130E2DF964C7 /* Resources */,
 				352AC268196F0A232B44C359F5D7C845 /* Support Files */,
 			);
+			name = SVProgressHUD;
 			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
@@ -1135,6 +1135,7 @@
 				35199659133DD6ED75EAE4C36FD72C04 /* Resources */,
 				849DE063D510E5C55B36E56F94A3886D /* Support Files */,
 			);
+			name = MJRefresh;
 			path = MJRefresh;
 			sourceTree = "<group>";
 		};
@@ -1184,6 +1185,7 @@
 				75A0A753B2EF086826095588594EBA75 /* Frameworks */,
 				276170BECE3B675C2D597C88754F7201 /* Support Files */,
 			);
+			name = BmobSDK;
 			path = BmobSDK;
 			sourceTree = "<group>";
 		};
@@ -1202,6 +1204,7 @@
 				2E3DD72DBD983987F8C5B2D0E1AC1F9E /* Resources */,
 				FD95752201CE61FBBC4E23945F214B75 /* Support Files */,
 			);
+			name = mobAPI;
 			path = mobAPI;
 			sourceTree = "<group>";
 		};
@@ -1211,6 +1214,7 @@
 				33BD4319BD0B1A9A14B8302EFFDA30D2 /* standard */,
 				510F69C38FA31DF328B54F89CCF202F0 /* Support Files */,
 			);
+			name = FMDB;
 			path = FMDB;
 			sourceTree = "<group>";
 		};
@@ -1263,6 +1267,7 @@
 				F7A00631245087B3F6CD8636B90F0898 /* Frameworks */,
 				99CCCBA34FD6B8B63B30A6690FC5AC1C /* Support Files */,
 			);
+			name = MOBFoundation;
 			path = MOBFoundation;
 			sourceTree = "<group>";
 		};
@@ -1405,6 +1410,7 @@
 				EDA06D98CFC2E0590CE4D6627D3CAE5D /* ViewController+MASAdditions.m */,
 				DC0CEDEDBB4979200AE8592444B45F05 /* Support Files */,
 			);
+			name = Masonry;
 			path = Masonry;
 			sourceTree = "<group>";
 		};
@@ -1764,7 +1770,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1120;
+				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 9.3";
@@ -2051,8 +2057,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-<<<<<<< HEAD
-<<<<<<< HEAD
 		1129C142CDE7F93E5F65C52D9847FDBF /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C04CDDD8D700F2217C63F0347DF8E3E7 /* SVProgressHUD.xcconfig */;
@@ -2078,9 +2082,6 @@
 			name = Release;
 		};
 		257497152829C177993B5EC99C1D227A /* Release */ = {
-=======
-		13A95306D85E4471AB6BE665B012E60A /* Debug */ = {
->>>>>>> 770aaca2a6d5c31f3777f635abd1fa661211f9a7
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -2112,19 +2113,14 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
->>>>>>> CL- add MenuVC net  data
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_DEBUG=1",
-					"DEBUG=1",
+					"POD_CONFIGURATION_RELEASE=1",
 					"$(inherited)",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -2134,99 +2130,56 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-<<<<<<< HEAD
-<<<<<<< HEAD
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
-<<<<<<< HEAD
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
-=======
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
->>>>>>> 770aaca2a6d5c31f3777f635abd1fa661211f9a7
 				SYMROOT = "${SRCROOT}/../build";
 			};
-			name = Debug;
+			name = Release;
 		};
-<<<<<<< HEAD
-<<<<<<< HEAD
 		2864B8151371217E5A22C6412F492423 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8FBA3AD5BC9327ECC8B620EC9B138129 /* Masonry.xcconfig */;
-=======
-		2FFCB660CC267865FA92BBBBAA487E92 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A14692695B08FAB20770BEE621623BC8 /* SVProgressHUD.xcconfig */;
->>>>>>> 770aaca2a6d5c31f3777f635abd1fa661211f9a7
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-<<<<<<< HEAD
-<<<<<<< HEAD
 				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
-=======
-				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
->>>>>>> 770aaca2a6d5c31f3777f635abd1fa661211f9a7
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
-<<<<<<< HEAD
-<<<<<<< HEAD
 				PRODUCT_MODULE_NAME = Masonry;
 				PRODUCT_NAME = Masonry;
-=======
->>>>>>> 770aaca2a6d5c31f3777f635abd1fa661211f9a7
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
-<<<<<<< HEAD
-<<<<<<< HEAD
 		2D5FF526500EE342963F8C9738EA46A1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DCE37B3BEC7443508F0D91801BEBD23E /* YYKit.xcconfig */;
-=======
-		5D2E657B83E5D6EBD2B33C00351DCFC8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 339CD86BA237C9B168F24E6123FEFC43 /* AFNetworking.xcconfig */;
->>>>>>> 770aaca2a6d5c31f3777f635abd1fa661211f9a7
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-<<<<<<< HEAD
-<<<<<<< HEAD
 				GCC_PREFIX_HEADER = "Target Support Files/YYKit/YYKit-prefix.pch";
-=======
-				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
->>>>>>> 770aaca2a6d5c31f3777f635abd1fa661211f9a7
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
-<<<<<<< HEAD
-<<<<<<< HEAD
 				PRODUCT_MODULE_NAME = YYKit;
 				PRODUCT_NAME = YYKit;
-=======
->>>>>>> 770aaca2a6d5c31f3777f635abd1fa661211f9a7
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -2252,8 +2205,6 @@
 			};
 			name = Debug;
 		};
-<<<<<<< HEAD
-<<<<<<< HEAD
 		36DE9C72D90FE1F07E82F8C906CEEF70 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 90C60683AD0B338772FD7772575E0F7F /* MOBFoundation.xcconfig */;
@@ -2290,11 +2241,6 @@
 		3DE6065355B2DD5EA67CB0140A4BB0B9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CA17F08FBF39A9D253E5BA5A19B87575 /* MJRefresh.xcconfig */;
-=======
-		7E735C2672630DDA5A31F639BD6FB96C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C15CC4028BA355A095EC2745445361C /* MJRefresh.xcconfig */;
->>>>>>> 770aaca2a6d5c31f3777f635abd1fa661211f9a7
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -2305,22 +2251,17 @@
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
-<<<<<<< HEAD
-<<<<<<< HEAD
 				PRODUCT_MODULE_NAME = MJRefresh;
 				PRODUCT_NAME = MJRefresh;
-=======
->>>>>>> 770aaca2a6d5c31f3777f635abd1fa661211f9a7
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
-<<<<<<< HEAD
+				VALIDATE_PRODUCT = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
-<<<<<<< HEAD
 		569CB90E8C3CE0967E9EFDABE659BD71 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9D644E3477411E15307DE82292517FED /* Pods-MyCode.release.xcconfig */;
@@ -2341,31 +2282,24 @@
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-=======
->>>>>>> 770aaca2a6d5c31f3777f635abd1fa661211f9a7
 			};
-			name = Debug;
+			name = Release;
 		};
-<<<<<<< HEAD
 		5D61DC43C7DC2F90C295C51D66EEE358 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8FBA3AD5BC9327ECC8B620EC9B138129 /* Masonry.xcconfig */;
-=======
-		82151B6C0C1BD16D45C41D1301E75AD7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 04F5B8D804B1928EB04EBC9B763C9FD9 /* FMDB.xcconfig */;
->>>>>>> 770aaca2a6d5c31f3777f635abd1fa661211f9a7
 			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/FMDB/FMDB-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Masonry;
+				PRODUCT_NAME = Masonry;
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -2374,115 +2308,32 @@
 			};
 			name = Debug;
 		};
-<<<<<<< HEAD
-<<<<<<< HEAD
 		5E472B313AAA528C22C1BF1D61D97C44 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 361336FEFD3DF8FF448C8EF6C35B56AD /* AFNetworking.xcconfig */;
-=======
-		8746B40EA10AE0BECA413052417AA5F9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 626F160585A3C2C61D98E7DC1E97526F /* Pods-MyCode.debug.xcconfig */;
->>>>>>> 770aaca2a6d5c31f3777f635abd1fa661211f9a7
 			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-<<<<<<< HEAD
 				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_MODULE_NAME = AFNetworking;
 				PRODUCT_NAME = AFNetworking;
 				PUBLIC_HEADERS_FOLDER_PATH = "";
-=======
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
->>>>>>> 770aaca2a6d5c31f3777f635abd1fa661211f9a7
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
-<<<<<<< HEAD
-=======
 			};
 			name = Debug;
 		};
-		8E8333274F4AB64785B04AB5B2A37231 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
->>>>>>> 770aaca2a6d5c31f3777f635abd1fa661211f9a7
-			};
-			name = Debug;
-		};
-<<<<<<< HEAD
 		66CF42AABEA0B7E33A5A181317260F84 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D75B82678F066646CAEF0BCE8EEE7C3E /* Pods-MyCode.debug.xcconfig */;
-=======
-		99A3F5759EB8ABB2584B2B47C83EA094 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 339CD86BA237C9B168F24E6123FEFC43 /* AFNetworking.xcconfig */;
->>>>>>> 770aaca2a6d5c31f3777f635abd1fa661211f9a7
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -2490,7 +2341,6 @@
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-<<<<<<< HEAD
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MACH_O_TYPE = staticlib;
 				OTHER_LDFLAGS = "";
@@ -2507,19 +2357,21 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CA17F08FBF39A9D253E5BA5A19B87575 /* MJRefresh.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				MACH_O_TYPE = staticlib;
+				GCC_PREFIX_HEADER = "Target Support Files/MJRefresh/MJRefresh-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = MJRefresh;
+				PRODUCT_NAME = MJRefresh;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -2530,7 +2382,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2540,7 +2392,6 @@
 			};
 			name = Debug;
 		};
-<<<<<<< HEAD
 		7D739AC43A36CD3B68BEDC3B9DFA3B35 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6AFE2B5E34970F59463B7B84B5E51989 /* FMDB.xcconfig */;
@@ -2550,26 +2401,13 @@
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-<<<<<<< HEAD
 				GCC_PREFIX_HEADER = "Target Support Files/FMDB/FMDB-prefix.pch";
-=======
-				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
->>>>>>> CL- add MenuVC net  data
-=======
-				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
->>>>>>> 770aaca2a6d5c31f3777f635abd1fa661211f9a7
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
-<<<<<<< HEAD
-<<<<<<< HEAD
 				PRODUCT_MODULE_NAME = FMDB;
 				PRODUCT_NAME = FMDB;
-=======
->>>>>>> CL- add MenuVC net  data
-=======
->>>>>>> 770aaca2a6d5c31f3777f635abd1fa661211f9a7
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -2579,20 +2417,13 @@
 			};
 			name = Release;
 		};
-<<<<<<< HEAD
-<<<<<<< HEAD
 		A5136AE5A2D442E3FFDA6F9EFEE97FE6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 737E532DD46F2CBBB0CE955B9840866C /* BmobSDK.xcconfig */;
-=======
-		AA4B1B7999CB4C7305F3F36F6DB4311B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C15CC4028BA355A095EC2745445361C /* MJRefresh.xcconfig */;
->>>>>>> 770aaca2a6d5c31f3777f635abd1fa661211f9a7
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2606,38 +2437,19 @@
 		A6869057E1D18A775A29ACDF063E071D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6AFE2B5E34970F59463B7B84B5E51989 /* FMDB.xcconfig */;
-=======
-		AA4B1B7999CB4C7305F3F36F6DB4311B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C15CC4028BA355A095EC2745445361C /* MJRefresh.xcconfig */;
->>>>>>> CL- add MenuVC net  data
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-<<<<<<< HEAD
-<<<<<<< HEAD
 				GCC_PREFIX_HEADER = "Target Support Files/FMDB/FMDB-prefix.pch";
-=======
-				GCC_PREFIX_HEADER = "Target Support Files/MJRefresh/MJRefresh-prefix.pch";
->>>>>>> CL- add MenuVC net  data
-=======
-				GCC_PREFIX_HEADER = "Target Support Files/MJRefresh/MJRefresh-prefix.pch";
->>>>>>> 770aaca2a6d5c31f3777f635abd1fa661211f9a7
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
-<<<<<<< HEAD
-<<<<<<< HEAD
 				PRODUCT_MODULE_NAME = FMDB;
 				PRODUCT_NAME = FMDB;
-=======
->>>>>>> CL- add MenuVC net  data
-=======
->>>>>>> 770aaca2a6d5c31f3777f635abd1fa661211f9a7
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -2663,47 +2475,21 @@
 			};
 			name = Release;
 		};
-<<<<<<< HEAD
-<<<<<<< HEAD
 		C91E657779E99963233F116F53683F78 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C04CDDD8D700F2217C63F0347DF8E3E7 /* SVProgressHUD.xcconfig */;
-=======
-		BF9383FB656AC68BEAC7EA6AE3A00979 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 43715D28C028C3551EB6B416D7F2EAF1 /* YYKit.xcconfig */;
->>>>>>> CL- add MenuVC net  data
-=======
-		BF9383FB656AC68BEAC7EA6AE3A00979 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 43715D28C028C3551EB6B416D7F2EAF1 /* YYKit.xcconfig */;
->>>>>>> 770aaca2a6d5c31f3777f635abd1fa661211f9a7
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-<<<<<<< HEAD
-<<<<<<< HEAD
 				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
-=======
-				GCC_PREFIX_HEADER = "Target Support Files/YYKit/YYKit-prefix.pch";
->>>>>>> CL- add MenuVC net  data
-=======
-				GCC_PREFIX_HEADER = "Target Support Files/YYKit/YYKit-prefix.pch";
->>>>>>> 770aaca2a6d5c31f3777f635abd1fa661211f9a7
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
-<<<<<<< HEAD
-<<<<<<< HEAD
 				PRODUCT_MODULE_NAME = SVProgressHUD;
 				PRODUCT_NAME = SVProgressHUD;
-=======
->>>>>>> CL- add MenuVC net  data
-=======
->>>>>>> 770aaca2a6d5c31f3777f635abd1fa661211f9a7
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -2712,15 +2498,7 @@
 			};
 			name = Debug;
 		};
-<<<<<<< HEAD
-<<<<<<< HEAD
 		D348F17534853B06614078F112D33816 /* Debug */ = {
-=======
-		D5EA84FCE460604CB7122C3EE0EB0A60 /* Release */ = {
->>>>>>> CL- add MenuVC net  data
-=======
-		D5EA84FCE460604CB7122C3EE0EB0A60 /* Release */ = {
->>>>>>> 770aaca2a6d5c31f3777f635abd1fa661211f9a7
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DCE37B3BEC7443508F0D91801BEBD23E /* YYKit.xcconfig */;
 			buildSettings = {
@@ -2729,10 +2507,12 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/YYKit/YYKit-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = YYKit;
+				PRODUCT_NAME = YYKit;
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -2741,16 +2521,9 @@
 			};
 			name = Debug;
 		};
-<<<<<<< HEAD
-<<<<<<< HEAD
 		DD8F832993327D1DD8046C3CBCBD97CD /* Debug */ = {
-=======
-		DB4AA09D6A87734975482BB05CC1F54A /* Release */ = {
->>>>>>> CL- add MenuVC net  data
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5A9AC3D30A185E969F434C906EE11DA4 /* Masonry.xcconfig */;
 			buildSettings = {
-<<<<<<< HEAD
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -2809,132 +2582,28 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
-=======
-=======
-		DB4AA09D6A87734975482BB05CC1F54A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5A9AC3D30A185E969F434C906EE11DA4 /* Masonry.xcconfig */;
-			buildSettings = {
->>>>>>> 770aaca2a6d5c31f3777f635abd1fa661211f9a7
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-<<<<<<< HEAD
->>>>>>> CL- add MenuVC net  data
-			};
-			name = Release;
-		};
-<<<<<<< HEAD
-		F0E0DE99D8C9C7D10672428D98A470BF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 361336FEFD3DF8FF448C8EF6C35B56AD /* AFNetworking.xcconfig */;
-=======
-		DFA34D2A851734E8927837CFF0B87A64 /* Release */ = {
-			isa = XCBuildConfiguration;
-=======
-			};
-			name = Release;
-		};
-		DFA34D2A851734E8927837CFF0B87A64 /* Release */ = {
-			isa = XCBuildConfiguration;
->>>>>>> 770aaca2a6d5c31f3777f635abd1fa661211f9a7
-			baseConfigurationReference = A14692695B08FAB20770BEE621623BC8 /* SVProgressHUD.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		E2EB527A037E509A0FEFD78B70F3433D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5A9AC3D30A185E969F434C906EE11DA4 /* Masonry.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		ECE7A40AAC782AFBDAC24B7F732EB4BF /* Release */ = {
+		F0E0DE99D8C9C7D10672428D98A470BF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 04F5B8D804B1928EB04EBC9B763C9FD9 /* FMDB.xcconfig */;
+			baseConfigurationReference = 361336FEFD3DF8FF448C8EF6C35B56AD /* AFNetworking.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/FMDB/FMDB-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = AFNetworking;
+				PRODUCT_NAME = AFNetworking;
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		EF248CB9FE8612C645B23E28C7DF5DE3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6E7CF211E789910A0ABA2DE40BA8EF24 /* Pods-MyCode.release.xcconfig */;
-<<<<<<< HEAD
->>>>>>> CL- add MenuVC net  data
-=======
->>>>>>> 770aaca2a6d5c31f3777f635abd1fa661211f9a7
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -2973,18 +2642,8 @@
 		45F2B0D1B5678F9C279BE5C908A61304 /* Build configuration list for PBXNativeTarget "YYKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-<<<<<<< HEAD
-<<<<<<< HEAD
 				D348F17534853B06614078F112D33816 /* Debug */,
 				2D5FF526500EE342963F8C9738EA46A1 /* Release */,
-=======
-				82151B6C0C1BD16D45C41D1301E75AD7 /* Debug */,
-				ECE7A40AAC782AFBDAC24B7F732EB4BF /* Release */,
->>>>>>> CL- add MenuVC net  data
-=======
-				82151B6C0C1BD16D45C41D1301E75AD7 /* Debug */,
-				ECE7A40AAC782AFBDAC24B7F732EB4BF /* Release */,
->>>>>>> 770aaca2a6d5c31f3777f635abd1fa661211f9a7
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2992,18 +2651,8 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-<<<<<<< HEAD
-<<<<<<< HEAD
 				DD8F832993327D1DD8046C3CBCBD97CD /* Debug */,
 				257497152829C177993B5EC99C1D227A /* Release */,
-=======
-				13A95306D85E4471AB6BE665B012E60A /* Debug */,
-				8E8333274F4AB64785B04AB5B2A37231 /* Release */,
->>>>>>> CL- add MenuVC net  data
-=======
-				13A95306D85E4471AB6BE665B012E60A /* Debug */,
-				8E8333274F4AB64785B04AB5B2A37231 /* Release */,
->>>>>>> 770aaca2a6d5c31f3777f635abd1fa661211f9a7
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3011,18 +2660,8 @@
 		8114D12E0CC192BAC30047E65F7D1B0B /* Build configuration list for PBXAggregateTarget "BmobSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-<<<<<<< HEAD
-<<<<<<< HEAD
 				69856E9FDDB36CF9D57C720BAECCB623 /* Debug */,
 				A5136AE5A2D442E3FFDA6F9EFEE97FE6 /* Release */,
-=======
-				E2EB527A037E509A0FEFD78B70F3433D /* Debug */,
-				DB4AA09D6A87734975482BB05CC1F54A /* Release */,
->>>>>>> CL- add MenuVC net  data
-=======
-				E2EB527A037E509A0FEFD78B70F3433D /* Debug */,
-				DB4AA09D6A87734975482BB05CC1F54A /* Release */,
->>>>>>> 770aaca2a6d5c31f3777f635abd1fa661211f9a7
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3030,18 +2669,8 @@
 		9B33C3C8202FFE2203CAFCEB78B4ACD5 /* Build configuration list for PBXAggregateTarget "MOBFoundation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-<<<<<<< HEAD
-<<<<<<< HEAD
 				3AEF28CCA4F379E360BAFF687AD5FD31 /* Debug */,
 				36DE9C72D90FE1F07E82F8C906CEEF70 /* Release */,
-=======
-				7E735C2672630DDA5A31F639BD6FB96C /* Debug */,
-				AA4B1B7999CB4C7305F3F36F6DB4311B /* Release */,
->>>>>>> CL- add MenuVC net  data
-=======
-				7E735C2672630DDA5A31F639BD6FB96C /* Debug */,
-				AA4B1B7999CB4C7305F3F36F6DB4311B /* Release */,
->>>>>>> 770aaca2a6d5c31f3777f635abd1fa661211f9a7
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3049,18 +2678,8 @@
 		BC154A5C611F0E886913EDF2FEBB3F87 /* Build configuration list for PBXNativeTarget "Pods-MyCode" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-<<<<<<< HEAD
-<<<<<<< HEAD
 				66CF42AABEA0B7E33A5A181317260F84 /* Debug */,
 				569CB90E8C3CE0967E9EFDABE659BD71 /* Release */,
-=======
-				2FFCB660CC267865FA92BBBBAA487E92 /* Debug */,
-				DFA34D2A851734E8927837CFF0B87A64 /* Release */,
->>>>>>> CL- add MenuVC net  data
-=======
-				2FFCB660CC267865FA92BBBBAA487E92 /* Debug */,
-				DFA34D2A851734E8927837CFF0B87A64 /* Release */,
->>>>>>> 770aaca2a6d5c31f3777f635abd1fa661211f9a7
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3068,18 +2687,8 @@
 		CEC4A4D479D1F3C3021E42D05B0EDD44 /* Build configuration list for PBXNativeTarget "FMDB" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-<<<<<<< HEAD
-<<<<<<< HEAD
 				A6869057E1D18A775A29ACDF063E071D /* Debug */,
 				7D739AC43A36CD3B68BEDC3B9DFA3B35 /* Release */,
-=======
-				5D2E657B83E5D6EBD2B33C00351DCFC8 /* Debug */,
-				99A3F5759EB8ABB2584B2B47C83EA094 /* Release */,
->>>>>>> CL- add MenuVC net  data
-=======
-				5D2E657B83E5D6EBD2B33C00351DCFC8 /* Debug */,
-				99A3F5759EB8ABB2584B2B47C83EA094 /* Release */,
->>>>>>> 770aaca2a6d5c31f3777f635abd1fa661211f9a7
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3087,18 +2696,8 @@
 		EE91476FFEA2C3B3AB024E94672BCFF2 /* Build configuration list for PBXNativeTarget "AFNetworking" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-<<<<<<< HEAD
-<<<<<<< HEAD
 				5E472B313AAA528C22C1BF1D61D97C44 /* Debug */,
 				F0E0DE99D8C9C7D10672428D98A470BF /* Release */,
-=======
-				8746B40EA10AE0BECA413052417AA5F9 /* Debug */,
-				EF248CB9FE8612C645B23E28C7DF5DE3 /* Release */,
->>>>>>> CL- add MenuVC net  data
-=======
-				8746B40EA10AE0BECA413052417AA5F9 /* Debug */,
-				EF248CB9FE8612C645B23E28C7DF5DE3 /* Release */,
->>>>>>> 770aaca2a6d5c31f3777f635abd1fa661211f9a7
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3106,18 +2705,8 @@
 		F49D2BFAAA78D95C1429E59AB1A23ACE /* Build configuration list for PBXNativeTarget "SVProgressHUD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-<<<<<<< HEAD
-<<<<<<< HEAD
 				C91E657779E99963233F116F53683F78 /* Debug */,
 				1129C142CDE7F93E5F65C52D9847FDBF /* Release */,
-=======
-				BF9383FB656AC68BEAC7EA6AE3A00979 /* Debug */,
-				D5EA84FCE460604CB7122C3EE0EB0A60 /* Release */,
->>>>>>> CL- add MenuVC net  data
-=======
-				BF9383FB656AC68BEAC7EA6AE3A00979 /* Debug */,
-				D5EA84FCE460604CB7122C3EE0EB0A60 /* Release */,
->>>>>>> 770aaca2a6d5c31f3777f635abd1fa661211f9a7
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
